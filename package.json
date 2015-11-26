@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Ustice/waze-pusher#readme",
   "dependencies": {
     "express": "^4.13.3",
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "superagent": "^1.4.0"
   }
 }
