@@ -39,7 +39,11 @@ app.get('/', function (req, res) {
                     .type('form')
                     .send(pushoverOptions)
                     .end(function (err, pushoverResponse) {
-                        return res.status(500).send('Error sending to Pushover.\n\n' + JSON.stringify(err, null, '  '));
+                        if (err) {
+                            return res.status(500).send('Error sending to Pushover.\n\n' + JSON.stringify(err, null, '  '));
+                        }
+
+                        return res.status(200).send('Link sent');
                     })
                 ;
             })
