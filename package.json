@@ -1,0 +1,23 @@
+{
+  "name": "waze-pusher",
+  "version": "0.0.0",
+  "description": "Send a GET request with address and it will post a Waze navigation link to Pushover",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ustice/waze-pusher.git"
+  },
+  "author": "Jason Kleinberg (ustice@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ustice/waze-pusher/issues"
+  },
+  "homepage": "https://github.com/Ustice/waze-pusher#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "lodash": "^3.10.1"
+  }
+}
