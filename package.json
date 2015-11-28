@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/Ustice/waze-pusher#readme",
   "dependencies": {
+    "bluebird": "^3.0.5",
     "express": "^4.13.3",
     "lodash": "^3.10.1",
-    "superagent": "^1.4.0"
+    "superagent": "^1.4.0",
+    "superagent-promise": "^1.0.3"
   }
 }
