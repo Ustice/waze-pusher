@@ -72,8 +72,7 @@ app.get('/', function (req, res) {
         ;
     })
     .catch(err => {
-        if (err.response.status === 400) {
-            console.log(_.isObject(err.response.text))
+        if (err.response.status <== 400) {
             if (_.isString(err.response.text) && JSON.parse(err.response.text).token === 'invalid') {
                 throw new ServerError('Unable to authenticate with Pushover.');
             }
